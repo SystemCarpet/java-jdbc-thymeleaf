@@ -11,8 +11,12 @@
             "id": "1f78b6dfb54acfae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "tomcat.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "tomcat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "tomcat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "tomcat.md"
+              }
             }
           }
         ]
@@ -140,12 +148,12 @@
   },
   "active": "1f78b6dfb54acfae",
   "lastOpenFiles": [
-    "watch.md",
+    "servlets.md",
+    "servidor web.md",
     "cliente-servidor.md",
+    "watch.md",
     "Pasted image 20240415195156.png",
     "Pasted image 20240415200409.png",
-    "servidor web.md",
-    "servlets.md",
     "tomcat.md"
   ]
 }

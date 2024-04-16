@@ -1,1 +1,3 @@
 - version: apache-tomcat-9.0.87-windows-x64
+- jdk 17
+- java ee 8
