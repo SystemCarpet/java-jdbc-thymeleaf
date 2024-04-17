@@ -28,6 +28,7 @@ public class ClientListController extends HttpServlet {
 
         conn.closeConnection();
     }
+    //dao facade factory
     public List<Client> getAllUsers() {
         List<Client> clientList = new ArrayList<>();
         Connection connection = ConnectionJDBC.getConnection();
@@ -37,14 +38,14 @@ public class ClientListController extends HttpServlet {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int id = resultSet.getInt("id");
+                int id = resultSet.getInt("numero_documento");
                 String nombre = resultSet.getString("nombre");
                 String apellido = resultSet.getString("apellido");
                 LocalDate fechaNacimiento = resultSet.getDate("fecha_nacimiento").toLocalDate();
                 String ciudad = resultSet.getString("ciudad");
                 String correoElectronico = resultSet.getString("correo_electronico");
                 String telefono = resultSet.getString("telefono");
-                String ocupacion = resultSet.getString("ocupacino");
+                String ocupacion = resultSet.getString("ocupacion");
 
                 Client user = new Client(id, nombre,apellido,fechaNacimiento,ciudad,correoElectronico,telefono,ocupacion);
                 clientList.add(user);
