@@ -8,14 +8,14 @@ public class Client {
     private String nombre;
     private String apellidos;
     private LocalDate fechaNacimiento;
-    private String ciudad;
+    private City ciudad;
     private String correoElectronico;
     private String telefono;
     private String ocupacion; // Empleado, Independiente, Pensionado
 
     // Constructor
     public Client(int numeroDocumento, String nombre, String apellidos, LocalDate fechaNacimiento,
-                  String ciudad, String correoElectronico, String telefono, String ocupacion) {
+                  City ciudad, String correoElectronico, String telefono, String ocupacion) {
         this.numeroDocumento = numeroDocumento;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -58,11 +58,11 @@ public class Client {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String getCiudad() {
+    public City getCiudad() {
         return ciudad;
     }
 
-    public void setCiudad(String ciudad) {
+    public void setCiudad(City ciudad) {
         this.ciudad = ciudad;
     }
 

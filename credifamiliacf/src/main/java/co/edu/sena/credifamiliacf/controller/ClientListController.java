@@ -1,5 +1,6 @@
 package co.edu.sena.credifamiliacf.controller;
 
+import co.edu.sena.credifamiliacf.model.City;
 import co.edu.sena.credifamiliacf.model.Client;
 import co.edu.sena.credifamiliacf.persistence.ConnectionJDBC;
 
@@ -42,7 +43,7 @@ public class ClientListController extends HttpServlet {
                 String nombre = resultSet.getString("nombre");
                 String apellido = resultSet.getString("apellido");
                 LocalDate fechaNacimiento = resultSet.getDate("fecha_nacimiento").toLocalDate();
-                String ciudad = resultSet.getString("ciudad");
+                City ciudad = resultSet.getObject("ciudad",City.class);
                 String correoElectronico = resultSet.getString("correo_electronico");
                 String telefono = resultSet.getString("telefono");
                 String ocupacion = resultSet.getString("ocupacion");
