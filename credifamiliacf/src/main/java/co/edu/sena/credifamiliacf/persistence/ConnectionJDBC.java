@@ -10,7 +10,7 @@ public class ConnectionJDBC {
     private static final String USERNAME = "root"; // Replace with your actual username
     private static final String PASSWORD = ""; // Replace with your actual password
 
-    private Connection connection;
+    private static Connection connection;
 
     public ConnectionJDBC() {
         try {
@@ -25,10 +25,9 @@ public class ConnectionJDBC {
         }
     }
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         return connection;
     }
-/* i dont need to close the conexion, just in case
     public void closeConnection() {
         if (connection != null) {
             try {
@@ -39,5 +38,5 @@ public class ConnectionJDBC {
         }
     }
 
- */
+
 }
