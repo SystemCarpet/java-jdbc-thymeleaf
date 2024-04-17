@@ -39,7 +39,7 @@
         <td><%= cliente.getNombre() %></td>
         <td><%= cliente.getApellidos() %></td>
         <td><%= cliente.getFechaNacimiento() %></td>
-        <td><%= cliente.getCiudad() %></td>
+        <td><%= cliente.getCiudad().getNombreCiudad() %></td>
         <td><%= cliente.getCorreoElectronico() %></td>
         <td><%= cliente.getTelefono() %></td>
         <td><%= cliente.getOcupacion() %></td>

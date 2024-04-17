@@ -43,12 +43,18 @@ public class ClientListController extends HttpServlet {
                 String nombre = resultSet.getString("nombre");
                 String apellido = resultSet.getString("apellido");
                 LocalDate fechaNacimiento = resultSet.getDate("fecha_nacimiento").toLocalDate();
-                City ciudad = resultSet.getObject("ciudad",City.class);
+                int ciudad = resultSet.getInt("ciudad_id");
                 String correoElectronico = resultSet.getString("correo_electronico");
                 String telefono = resultSet.getString("telefono");
                 String ocupacion = resultSet.getString("ocupacion");
 
-                Client user = new Client(id, nombre,apellido,fechaNacimiento,ciudad,correoElectronico,telefono,ocupacion);
+                ResultSet foreignResult = connection.prepareStatement("select * from ciudad where id ="+ciudad).executeQuery();
+                foreignResult.next();
+
+                String nombreCiudad = foreignResult.getString("nombre_ciudad");
+                City ciudadfk = new City(nombreCiudad);
+
+                Client user = new Client(id, nombre,apellido,fechaNacimiento,ciudadfk,correoElectronico,telefono,ocupacion);
                 clientList.add(user);
             }
 
