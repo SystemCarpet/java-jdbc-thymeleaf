@@ -36,6 +36,22 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!--
+        my dependencies
+        -->
+        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.clojure/java.jdbc -->
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>java.jdbc</artifactId>
+            <version>0.7.12</version>
+        </dependency>
     </dependencies>
 
     <build>

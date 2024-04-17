@@ -1,11 +1,11 @@
-package co.edu.sena.credifamiliacf;
+package co.edu.sena.credifamiliacf.controller;
 
 import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet(name = "clientList", value = "/client-list")
+public class ClientListController extends HttpServlet {
     private String message;
 
     public void init() {
