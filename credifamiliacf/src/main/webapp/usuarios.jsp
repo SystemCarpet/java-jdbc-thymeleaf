@@ -43,11 +43,13 @@
         <td><%= cliente.getCorreoElectronico() %></td>
         <td><%= cliente.getTelefono() %></td>
         <td><%= cliente.getOcupacion() %></td>
+        <td><a href="#">Editar</a></td>
     </tr>
 <%
     }
 %>
     </tbody>
 </table>
+<a href="/">volver</a>
 </body>
 </html>

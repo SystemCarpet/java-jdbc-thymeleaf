@@ -10,5 +10,7 @@
 </h1>
 <br/>
 <a href="client-list">listar usuarios</a>
+<a href="client-add">añadir usuario</a>
+
 </body>
 </html>
