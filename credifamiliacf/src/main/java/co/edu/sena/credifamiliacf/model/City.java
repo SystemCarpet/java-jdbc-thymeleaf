@@ -1,17 +1,17 @@
 package co.edu.sena.credifamiliacf.model;
 
 public class City {
-    private String nombre_ciudad;
+    private String nombreCiudad;
 
-    public City(String nombre_ciudad) {
-        this.nombre_ciudad = nombre_ciudad;
+    public City(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
     }
 
-    public String getNombre_ciudad() {
-        return nombre_ciudad;
+    public String getNombreCiudad() {
+        return nombreCiudad;
     }
 
-    public void setNombre_ciudad(String nombre_ciudad) {
-        this.nombre_ciudad = nombre_ciudad;
+    public void setNombreCiudad(String nombreCiudad) {
+        this.nombreCiudad = nombreCiudad;
     }
 }
