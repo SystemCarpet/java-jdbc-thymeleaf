@@ -24,6 +24,7 @@
         <th>Correo electrónico</th>
         <th>Teléfono</th>
         <th>Ocupación</th>
+        <th>viabilidad</th>
     </tr>
     </thead>
     <tbody>
@@ -43,13 +44,15 @@
         <td><%= cliente.getCorreoElectronico() %></td>
         <td><%= cliente.getTelefono() %></td>
         <td><%= cliente.getOcupacion() %></td>
+        <td><%= cliente.getViabilidad() %></td>
         <td><a href="#">Editar</a></td>
+        <td><a href="#">Eliminar</a></td>
     </tr>
 <%
     }
 %>
     </tbody>
 </table>
-<a href="/">volver</a>
+<a href="/credifamiliacf/">volver</a>
 </body>
 </html>

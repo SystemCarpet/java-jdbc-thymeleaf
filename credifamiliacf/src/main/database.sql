@@ -1,3 +1,5 @@
+CREATE DATABASE if not exists credifamilia;
+USE credifamilia;
 CREATE TABLE ciudad (
   id INT PRIMARY KEY AUTO_INCREMENT,
   nombre_ciudad VARCHAR(50) NOT NULL

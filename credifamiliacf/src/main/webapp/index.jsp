@@ -9,8 +9,8 @@
     <%= "que accion desea realizar?" %>
 </h1>
 <br/>
-<a href="client-list">listar usuarios</a>
-<a href="client-add">añadir usuario</a>
+<a href="client-list">lista de usuarios</a>
+<a href="client-add">añadir un nuevo usuario</a>
 
 </body>
 </html>

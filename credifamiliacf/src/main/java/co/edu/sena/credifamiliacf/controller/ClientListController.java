@@ -26,8 +26,6 @@ public class ClientListController extends HttpServlet {
         miSesion.setAttribute("listaUsuarios",listaUsuarios);
 
         response.sendRedirect("usuarios.jsp");
-
-        conn.closeConnection();
     }
     //dao facade factory
     public List<Client> getAllUsers() {
@@ -47,14 +45,17 @@ public class ClientListController extends HttpServlet {
                 String correoElectronico = resultSet.getString("correo_electronico");
                 String telefono = resultSet.getString("telefono");
                 String ocupacion = resultSet.getString("ocupacion");
+                Boolean viabilidad = resultSet.getBoolean("viable");
 
                 ResultSet foreignResult = connection.prepareStatement("select * from ciudad where id ="+ciudad).executeQuery();
                 foreignResult.next();
 
                 String nombreCiudad = foreignResult.getString("nombre_ciudad");
-                City ciudadfk = new City(nombreCiudad);
+                int idCiudad = foreignResult.getInt("id");
+                City ciudadfk = new City(idCiudad, nombreCiudad);
 
                 Client user = new Client(id, nombre,apellido,fechaNacimiento,ciudadfk,correoElectronico,telefono,ocupacion);
+                user.setViabilidad(viabilidad);
                 clientList.add(user);
             }
 

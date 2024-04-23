@@ -12,8 +12,10 @@ public class Client {
     private String correoElectronico;
     private String telefono;
     private String ocupacion; // Empleado, Independiente, Pensionado
+    private Boolean viabilidad;
 
     // Constructor
+    public  Client(){};
     public Client(int numeroDocumento, String nombre, String apellidos, LocalDate fechaNacimiento,
                   City ciudad, String correoElectronico, String telefono, String ocupacion) {
         this.numeroDocumento = numeroDocumento;
@@ -24,6 +26,14 @@ public class Client {
         this.correoElectronico = correoElectronico;
         this.telefono = telefono;
         this.ocupacion = ocupacion;
+    }
+
+    public Boolean getViabilidad() {
+        return viabilidad;
+    }
+
+    public void setViabilidad(Boolean viabilidad) {
+        this.viabilidad = viabilidad;
     }
 
     public int getNumeroDocumento() {
