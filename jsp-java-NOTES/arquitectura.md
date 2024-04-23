@@ -9,3 +9,6 @@ servidor web para crear contenedores de servlets, jsp y desplegarlos
 
 para que el protocolo http pueda ser entendido del lado del servidor se necesita un web server (tomcat en este caso) el servlet container, contiene todo aquel contenido que intervenga con una  request/response
 ![[Pasted image 20240415200409.png]]
+
+## web.xml
+https://www.arquitecturajava.com/que-es-el-web-xml/
