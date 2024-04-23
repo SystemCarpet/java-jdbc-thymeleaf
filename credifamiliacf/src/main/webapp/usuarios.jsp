@@ -45,7 +45,7 @@
         <td><%= cliente.getTelefono() %></td>
         <td><%= cliente.getOcupacion() %></td>
         <td><%= cliente.getViabilidad() %></td>
-        <td><a href="#">Editar</a></td>
+        <td><a href="client-edit?act=edit&id=<%=cliente.getNumeroDocumento()%>">Editar</a></td>
         <td><a href="#">Eliminar</a></td>
     </tr>
 <%
